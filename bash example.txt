@@ -1,0 +1,4 @@
+mkdir external_libs
+cd external_libs
+git clone https://github.com/facebookresearch/ImageBind
+git clone https://github.com/teticio/audio-diffusion.git
