@@ -1,9 +1,9 @@
---index-url https://download.pytorch.org/whl/cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
 torch
 torchvision
 torchaudio
-timm==0.6.7
-eva-decord==0.6.1
+timm
+eva-decord
 ftfy
 regex
 einops
@@ -12,6 +12,7 @@ iopath
 numpy
 matplotlib
 types-regex
+vtk
 mayavi
 cartopy
 numpy
@@ -24,5 +25,6 @@ streamlit
 tensorboard
 accelerate
 transformers
+tokenizers<=0.19
 clip @ git+https://github.com/openai/CLIP.git@a1d071733d7111c9c014f024669f959182114e33
 pytorchvideo @ git+https://github.com/facebookresearch/pytorchvideo.git@28fe037d212663c6a24f373b94cc5d478c8c1a1d

@@ -1,12 +1,11 @@
 import os
+import time
 import scipy
 import torch
-from PIL import Image
 from diffusers import AudioLDM2Pipeline
 from transformers import BlipProcessor, BlipForConditionalGeneration
-import time
 
-class pretrained_caption_audsynth:
+class PretrainedCaptionAudSynth:
 
     def __init__(self):
         self.caption_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
@@ -20,7 +19,7 @@ class pretrained_caption_audsynth:
         out = self.caption_model.generate(**inputs)
         return self.caption_processor.decode(out[0], skip_special_tokens=True)
 
-    def generate_audio(self, prompt_input, seed=None):
+    def generate_audio(self, prompt_input, savepath=None):
         generator = torch.Generator("cuda").manual_seed(0)
         audio = self.audio_model(
             prompt_input,

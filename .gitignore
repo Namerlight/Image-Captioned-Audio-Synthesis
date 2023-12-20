@@ -1,3 +1,11 @@
 .idea/
+.checkpoints/
 venv/
 external_libs/
+pretrained_weights/
+testing/
+output/
+testing.py
+
+__pycache__/
+*.py[cod]
