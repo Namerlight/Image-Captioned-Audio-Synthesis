@@ -1,6 +1,6 @@
 # Image-to-Captioned-Audio Synthesis
 
-#### Project for CMSC 691 - Computer Vision
+#### Project for CMSC 691 - Computer Vision (Dr. Tejas Gokhale) at UMBC
 
 ## Installing it
 
